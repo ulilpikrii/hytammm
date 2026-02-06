@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tips Hemat Liburan di Lamongan - Fast City Tour</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f6f7f8;
+        }
+
+        :root {
+            --color-primary: #0a2647;
+            --color-accent: #ff6d00;
+            --color-accent-hover: #e65100;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--color-primary);
+        }
+
+        .text-primary-custom {
+            color: var(--color-primary);
+        }
+
+        .text-orange-custom {
+            color: var(--color-accent);
+        }
+
+        .bg-primary-custom {
+            background-color: var(--color-primary);
+        }
+
+        .btn-primary-custom {
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+            color: white;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: var(--color-accent-hover);
+            border-color: var(--color-accent-hover);
+        }
+
+        .article-header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #001f3f 100%);
+            padding: 100px 0 60px;
+            color: white;
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .article-content h3 {
+            color: var(--color-primary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: var(--color-primary);
+            color: #fff;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: var(--color-accent);
+        }
+
+        .floating-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .btn-wa-float {
+            background-color: #25D366;
+        }
+
+        .btn-up-float {
+            background-color: var(--color-accent);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            color: var(--color-accent-hover);
+        }
+
+        .tip-box {
+            background: linear-gradient(135deg, #fff5e6 0%, #ffe0b2 100%);
+            border-left: 4px solid var(--color-accent);
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="bg-primary-custom text-white rounded-circle p-2 me-2">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <span>Fast<span class="text-orange-custom">CityTour</span></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="package.html">Paket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transportasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contac-us.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold text-primary-custom" href="article.html">Artikel</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary-custom btn-sm rounded-pill px-4"
+                            href="https://wa.me/62856200884?text=Halo%20Fast%20City%20Tour%2C%20saya%20ingin%20bertanya%20tentang%20paket%20wisata"
+                            target="_blank" title="Chat WhatsApp">
+                            <i class="bi bi-whatsapp me-2"></i>Hubungi Kami
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="article-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="badge bg-primary mb-3 px-3 py-2">Tips Wisata</span>
+                    <h1 class="display-4 fw-bold mb-3">Tips Hemat Liburan di Lamongan</h1>
+                    <div class="d-flex justify-content-center align-items-center text-white-50">
+                        <span><i class="bi bi-calendar3 me-2"></i>10 November 2023</span>
+                        <span class="mx-3">•</span>
+                        <span><i class="bi bi-clock me-2"></i>4 menit baca</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <a href="article.html" class="back-link">
+                        <i class="bi bi-arrow-left me-2"></i>Kembali ke Artikel
+                    </a>
+
+                    <div class="bg-white rounded-4 shadow-sm p-4 p-lg-5">
+                        <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500" alt="Tips Wisata"
+                            class="article-image">
+
+                        <div class="article-content">
+                            <p class="lead">
+                                Liburan ke Lamongan tidak harus menguras kantong! Dengan perencanaan yang tepat dan
+                                tips-tips cerdas, Anda bisa menikmati keindahan Lamongan dengan budget yang terbatas.
+                                Berikut panduan lengkap untuk liburan hemat namun tetap menyenangkan.
+                            </p>
+
+                            <h3>1. Pilih Waktu Kunjungan yang Tepat</h3>
+                            <p>
+                                Waktu kunjungan sangat mempengaruhi biaya liburan Anda. Hindari musim liburan panjang
+                                seperti Lebaran, Natal, dan tahun baru karena harga tiket masuk tempat wisata biasanya
+                                naik 50-100%. Pilih waktu weekday untuk mendapatkan harga lebih murah.
+                            </p>
+                            <div class="tip-box">
+                                <strong><i class="bi bi-lightbulb-fill text-orange-custom me-2"></i>Pro Tip:</strong>
+                                Kunjungi WBL di hari Senin-Kamis untuk mendapatkan harga tiket termurah, bisa hemat
+                                hingga Rp 40.000 per orang!
+                            </div>
+
+                            <h3>2. Manfaatkan Paket Wisata</h3>
+                            <p>
+                                Menggunakan paket wisata dari agen travel seperti Fast City Tour seringkali lebih hemat
+                                dibanding mengatur sendiri. Paket wisata sudah termasuk transportasi, tiket masuk, dan
+                                kadang makan siang, sehingga Anda bisa menghemat waktu dan uang.
+                            </p>
+                            <ul>
+                                <li>Paket grup lebih murah per orang</li>
+                                <li>Tidak perlu pusing memikirkan rute dan transportasi</li>
+                                <li>Sudah termasuk guide yang berpengalaman</li>
+                                <li>Bisa nego harga untuk rombongan besar</li>
+                            </ul>
+
+                            <h3>3. Bawa Bekal dari Rumah</h3>
+                            <p>
+                                Harga makanan dan minuman di tempat wisata biasanya lebih mahal 2-3 kali lipat. Bawa
+                                bekal makanan ringan, snack, dan air minum dari rumah. Sebagian besar tempat wisata di
+                                Lamongan memperbolehkan pengunjung membawa makanan sendiri.
+                            </p>
+                            <div class="tip-box">
+                                <strong><i class="bi bi-lightbulb-fill text-orange-custom me-2"></i>Rekomendasi
+                                    Bekal:</strong> Roti, buah-buahan, air mineral dalam termos, dan snack favorit
+                                anak-anak. Bisa hemat Rp 100.000 - Rp 200.000 untuk keluarga!
+                            </div>
+
+                            <h3>4. Cari Promo dan Diskon</h3>
+                            <p>
+                                Rajin-rajinlah mengecek media sosial tempat wisata dan agen travel untuk mendapatkan
+                                informasi promo. Banyak tempat wisata yang memberikan diskon khusus di hari-hari
+                                tertentu atau untuk pembelian tiket online.
+                            </p>
+                            <ul>
+                                <li>Follow Instagram dan Facebook tempat wisata</li>
+                                <li>Daftar newsletter untuk dapat info promo duluan</li>
+                                <li>Manfaatkan promo kartu kredit atau e-wallet</li>
+                                <li>Cek aplikasi travel untuk voucher diskon</li>
+                            </ul>
+
+                            <h3>5. Gunakan Transportasi Bersama</h3>
+                            <p>
+                                Jika bepergian dengan keluarga atau teman, lebih hemat menyewa satu mobil atau bus
+                                dibanding menggunakan kendaraan masing-masing. Biaya sewa bisa dipatungan sehingga lebih
+                                murah per orang.
+                            </p>
+                            <div class="tip-box">
+                                <strong><i
+                                        class="bi bi-lightbulb-fill text-orange-custom me-2"></i>Perhitungan:</strong>
+                                Sewa Avanza Rp 650.000 untuk 7 orang = Rp 93.000/orang. Lebih murah dari naik travel
+                                yang bisa Rp 150.000/orang!
+                            </div>
+
+                            <h3>6. Kunjungi Tempat Wisata Gratis</h3>
+                            <p>
+                                Lamongan memiliki beberapa tempat wisata yang gratis atau murah meriah:
+                            </p>
+                            <ul>
+                                <li><strong>Pantai Tanjung Kodok</strong> - Hanya bayar parkir Rp 5.000</li>
+                                <li><strong>Alun-alun Lamongan</strong> - Gratis, cocok untuk santai sore</li>
+                                <li><strong>Makam Sunan Drajat</strong> - Gratis, hanya infaq seikhlasnya</li>
+                                <li><strong>Waduk Gondang</strong> - Tiket masuk sangat murah</li>
+                            </ul>
+
+                            <h3>7. Menginap di Penginapan Budget</h3>
+                            <p>
+                                Jika berencana menginap, pilih penginapan budget atau homestay yang harganya lebih
+                                terjangkau dibanding hotel berbintang. Banyak homestay di Lamongan yang bersih dan
+                                nyaman dengan harga Rp 150.000 - Rp 250.000 per malam.
+                            </p>
+
+                            <h3>8. Belanja Oleh-oleh di Pasar Tradisional</h3>
+                            <p>
+                                Untuk oleh-oleh, belanja di pasar tradisional atau toko oleh-oleh lokal lebih murah
+                                dibanding di rest area atau toko souvenir di tempat wisata. Harga bisa beda 30-50%!
+                            </p>
+                            <ul>
+                                <li>Pasar Lamongan untuk oleh-oleh makanan khas</li>
+                                <li>Toko oleh-oleh di pusat kota lebih murah</li>
+                                <li>Jangan lupa tawar-menawar!</li>
+                            </ul>
+
+                            <h3>9. Buat Itinerary yang Efisien</h3>
+                            <p>
+                                Rencanakan rute perjalanan yang efisien agar tidak bolak-balik dan menghabiskan banyak
+                                bensin. Kunjungi tempat wisata yang lokasinya berdekatan dalam satu hari.
+                            </p>
+                            <div class="tip-box">
+                                <strong><i class="bi bi-lightbulb-fill text-orange-custom me-2"></i>Contoh Rute
+                                    Efisien:</strong> Pagi ke WBL → Siang makan Soto Lamongan → Sore ke Pantai Tanjung
+                                Kodok (masih satu area)
+                            </div>
+
+                            <h3>10. Manfaatkan Jasa Tour Guide Lokal</h3>
+                            <p>
+                                Tour guide lokal biasanya tahu tempat-tempat makan enak dengan harga murah, spot foto
+                                gratis yang bagus, dan tips-tips hemat lainnya. Mereka juga bisa membantu negosiasi
+                                harga di beberapa tempat.
+                            </p>
+
+                            <h3>Estimasi Budget Liburan Hemat</h3>
+                            <p>
+                                Berikut estimasi budget untuk liburan hemat ke Lamongan (per orang):
+                            </p>
+                            <ul>
+                                <li>Transportasi (patungan): Rp 100.000</li>
+                                <li>Tiket masuk WBL (weekday): Rp 60.000</li>
+                                <li>Makan (bawa bekal + 1x makan di luar): Rp 50.000</li>
+                                <li>Oleh-oleh: Rp 50.000</li>
+                                <li>Lain-lain: Rp 40.000</li>
+                                <li><strong>Total: Rp 300.000</strong></li>
+                            </ul>
+
+                            <div class="alert alert-success mt-4">
+                                <h5 class="alert-heading"><i class="bi bi-piggy-bank me-2"></i>Paket Hemat dari Fast
+                                    City Tour</h5>
+                                <p class="mb-0">Kami menyediakan paket wisata hemat yang sudah termasuk transportasi,
+                                    tiket masuk, dan guide. Cocok untuk keluarga yang ingin liburan tanpa ribet!</p>
+                                <hr>
+                                <a href="https://wa.me/62856200884?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20paket%20wisata%20hemat%20ke%20Lamongan"
+                                    target="_blank" class="btn btn-primary-custom mt-2">
+                                    <i class="bi bi-whatsapp me-2"></i>Tanya Paket Hemat
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="article.html" class="btn btn-outline-primary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-2"></i>Kembali ke Artikel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3 text-orange-custom">Fast City Tour</h4>
+                    <p class="small text-white-50">
+                        Penyedia layanan wisata dan sewa transportasi terpercaya di Lamongan.
+                    </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-white">Hubungi Kami</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill text-orange-custom me-2"></i> Jl. Lamongan Raya
+                            No. 123</li>
+                        <li class="mb-2"><i class="bi bi-whatsapp text-orange-custom me-2"></i> +62 856-200-884</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-orange-custom me-2"></i> info@fastcitytour.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-white">Pembayaran</h5>
+                    <div class="bg-white rounded p-2 text-center">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATTM4Wnp2uLirZ6BQXS-8GhMvL8ojwGLca-6vNBVwaQ46hKpPIgZaOwPsbrDDf3mm0mPAzEkOh5pZxQqkY0HCzEoSxISU0W6hepow-NohPGSlTvJZGtQdtFjAklTMTCrw6M94GofFnpui1CkzN2WnlB_BDb2TYvs4Y_6Roj9GxIf--FfoSXS4FrO56kAfWTra89GA4zvG50eG8Aq9QO2WbUhajktmHNI3ME-BDU-oo44v3tIp8uwlnTDY9qmj0beNEEx5zLjdaqs8"
+                            alt="BCA" style="height: 30px;">
+                        <p class="text-dark fw-bold mb-0 small mt-1">8100-50-7711</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary mt-4 pt-3 text-center">
+                <p class="mb-0 small text-white-50">Copyright 2026 © Fast City Tour Lamongan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <a href="https://wa.me/62856200884?text=Halo%20Fast%20City%20Tour%2C%20saya%20ingin%20bertanya"
+            class="float-btn btn-wa-float" target="_blank" title="Chat WhatsApp">
+            <i class="bi bi-whatsapp fs-3"></i>
+        </a>
+        <a href="#" class="float-btn btn-up-float"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" title="Kembali ke Atas">
+            <i class="bi bi-arrow-up fs-4"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

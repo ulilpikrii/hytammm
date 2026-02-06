@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Legenda Soto Lamongan - Fast City Tour</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #f6f7f8;
+        }
+
+        :root {
+            --color-primary: #0a2647;
+            --color-accent: #ff6d00;
+            --color-accent-hover: #e65100;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--color-primary);
+        }
+
+        .text-primary-custom {
+            color: var(--color-primary);
+        }
+
+        .text-orange-custom {
+            color: var(--color-accent);
+        }
+
+        .bg-primary-custom {
+            background-color: var(--color-primary);
+        }
+
+        .btn-primary-custom {
+            background-color: var(--color-accent);
+            border-color: var(--color-accent);
+            color: white;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: var(--color-accent-hover);
+            border-color: var(--color-accent-hover);
+        }
+
+        .article-header {
+            background: linear-gradient(135deg, var(--color-primary) 0%, #001f3f 100%);
+            padding: 100px 0 60px;
+            color: white;
+        }
+
+        .article-content {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .article-content h3 {
+            color: var(--color-primary);
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer {
+            background-color: var(--color-primary);
+            color: #fff;
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: var(--color-accent);
+        }
+
+        .floating-container {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .float-btn {
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .btn-wa-float {
+            background-color: #25D366;
+        }
+
+        .btn-up-float {
+            background-color: var(--color-accent);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items-center;
+            color: var(--color-accent);
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .back-link:hover {
+            color: var(--color-accent-hover);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="bg-primary-custom text-white rounded-circle p-2 me-2">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </div>
+                <span>Fast<span class="text-orange-custom">CityTour</span></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="package.html">Paket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="transport.html">Transportasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contac-us.html">Kontak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fw-semibold text-primary-custom" href="article.html">Artikel</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-primary-custom btn-sm rounded-pill px-4"
+                            href="https://wa.me/62856200884?text=Halo%20Fast%20City%20Tour%2C%20saya%20ingin%20bertanya%20tentang%20paket%20wisata"
+                            target="_blank" title="Chat WhatsApp">
+                            <i class="bi bi-whatsapp me-2"></i>Hubungi Kami
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="article-header">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <span class="badge bg-warning text-dark mb-3 px-3 py-2">Kuliner</span>
+                    <h1 class="display-4 fw-bold mb-3">Legenda Soto Lamongan</h1>
+                    <div class="d-flex justify-content-center align-items-center text-white-50">
+                        <span><i class="bi bi-calendar3 me-2"></i>12 November 2023</span>
+                        <span class="mx-3">•</span>
+                        <span><i class="bi bi-clock me-2"></i>7 menit baca</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <a href="article.html" class="back-link">
+                        <i class="bi bi-arrow-left me-2"></i>Kembali ke Artikel
+                    </a>
+
+                    <div class="bg-white rounded-4 shadow-sm p-4 p-lg-5">
+                        <img src="foto/soto.jpeg" alt="Soto Lamongan" class="article-image">
+
+                        <div class="article-content">
+                            <p class="lead">
+                                Soto Lamongan adalah salah satu kuliner legendaris Indonesia yang telah mendunia. Dengan
+                                cita rasa khas yang gurih dan segar, soto ini menjadi kebanggaan masyarakat Lamongan dan
+                                favorit wisatawan dari berbagai daerah.
+                            </p>
+
+                            <h3>Sejarah Soto Lamongan</h3>
+                            <p>
+                                Soto Lamongan memiliki sejarah panjang yang dimulai sejak zaman kolonial Belanda. Konon,
+                                hidangan ini pertama kali dibuat oleh pedagang keliling yang ingin menciptakan makanan
+                                praktis namun bergizi untuk para pekerja. Seiring waktu, resep ini berkembang dan
+                                menjadi identitas kuliner Kabupaten Lamongan.
+                            </p>
+                            <p>
+                                Yang membuat Soto Lamongan istimewa adalah penggunaan bumbu koya, yaitu campuran kacang
+                                kedelai goreng yang ditumbuk halus dengan bawang putih. Bumbu inilah yang memberikan
+                                cita rasa gurih khas yang tidak ditemukan di jenis soto lainnya.
+                            </p>
+
+                            <h3>Keunikan Soto Lamongan</h3>
+                            <p>
+                                Berbeda dengan soto dari daerah lain, Soto Lamongan memiliki beberapa keunikan yang
+                                membuatnya mudah dikenali:
+                            </p>
+                            <ul>
+                                <li><strong>Bumbu Koya</strong> - Taburan kacang kedelai goreng yang ditumbuk halus,
+                                    memberikan tekstur dan rasa gurih yang khas</li>
+                                <li><strong>Kuah Bening</strong> - Kuah yang jernih namun kaya rasa, berbeda dengan soto
+                                    yang berkuah santan</li>
+                                <li><strong>Kecap Manis</strong> - Penggunaan kecap manis sebagai pelengkap yang
+                                    memberikan rasa manis gurih</li>
+                                <li><strong>Suwiran Ayam Kampung</strong> - Daging ayam kampung yang disuwir halus,
+                                    lebih gurih dibanding ayam biasa</li>
+                                <li><strong>Tauge Mentah</strong> - Tauge segar yang memberikan tekstur renyah</li>
+                            </ul>
+
+                            <h3>Komposisi dan Bahan</h3>
+                            <p>
+                                Soto Lamongan yang autentik terdiri dari beberapa komponen utama:
+                            </p>
+                            <ul>
+                                <li>Kuah kaldu ayam kampung yang direbus berjam-jam</li>
+                                <li>Suwiran daging ayam kampung</li>
+                                <li>Mie kuning atau bihun (sesuai selera)</li>
+                                <li>Tauge segar</li>
+                                <li>Telur rebus</li>
+                                <li>Daun seledri dan bawang goreng</li>
+                                <li>Bumbu koya (kacang kedelai goreng tumbuk)</li>
+                                <li>Kecap manis dan sambal</li>
+                                <li>Jeruk nipis atau jeruk limau</li>
+                            </ul>
+
+                            <h3>Tempat Makan Soto Lamongan Terbaik</h3>
+                            <p>
+                                Di Lamongan, Anda bisa menemukan Soto Lamongan di berbagai tempat, mulai dari warung
+                                pinggir jalan hingga restoran modern. Beberapa tempat yang terkenal antara lain:
+                            </p>
+                            <ul>
+                                <li><strong>Soto Ayam Lamongan Cak Har</strong> - Legendaris sejak tahun 1950-an</li>
+                                <li><strong>Soto Lamongan Pak Kumis</strong> - Terkenal dengan kuah kaldunya yang kental
+                                </li>
+                                <li><strong>Soto Ayam Ambengan Pak Sadi</strong> - Favorit warga lokal</li>
+                                <li><strong>Soto Lamongan Kartini</strong> - Cocok untuk keluarga dengan suasana nyaman
+                                </li>
+                            </ul>
+
+                            <h3>Tips Menikmati Soto Lamongan</h3>
+                            <p>
+                                Agar pengalaman menikmati Soto Lamongan semakin sempurna, ikuti tips berikut:
+                            </p>
+                            <ul>
+                                <li>Tambahkan bumbu koya secukupnya, jangan terlalu banyak agar tidak terlalu kental
+                                </li>
+                                <li>Peras jeruk nipis untuk menambah kesegaran</li>
+                                <li>Tambahkan kecap manis sesuai selera untuk rasa manis gurih</li>
+                                <li>Makan selagi hangat untuk mendapatkan cita rasa terbaik</li>
+                                <li>Jangan lupa pesan kerupuk sebagai pelengkap</li>
+                                <li>Coba variasi dengan mie kuning atau bihun</li>
+                            </ul>
+
+                            <h3>Harga dan Lokasi</h3>
+                            <p>
+                                Harga Soto Lamongan sangat terjangkau, berkisar antara Rp 15.000 - Rp 25.000 per porsi
+                                tergantung lokasi dan isian. Sebagian besar warung soto buka dari pagi hingga sore hari,
+                                dengan jam operasional paling ramai antara pukul 10.00 - 14.00.
+                            </p>
+                            <p>
+                                Warung-warung soto tersebar di seluruh Kabupaten Lamongan, terutama di pusat kota dan
+                                sepanjang jalan utama. Beberapa warung bahkan sudah membuka cabang di kota-kota besar
+                                seperti Surabaya, Jakarta, dan Bali.
+                            </p>
+
+                            <h3>Soto Lamongan sebagai Oleh-oleh</h3>
+                            <p>
+                                Bagi Anda yang ingin membawa pulang cita rasa Soto Lamongan, kini tersedia paket soto
+                                instan yang bisa dibawa sebagai oleh-oleh. Paket ini biasanya berisi bumbu koya, kecap,
+                                dan bumbu pelengkap lainnya yang sudah dikemas praktis. Anda tinggal menyiapkan ayam dan
+                                bahan pelengkap di rumah.
+                            </p>
+
+                            <div class="alert alert-warning mt-4">
+                                <h5 class="alert-heading"><i class="bi bi-cup-hot me-2"></i>Wisata Kuliner Soto Lamongan
+                                </h5>
+                                <p class="mb-0">Ingin mencicipi Soto Lamongan autentik langsung dari warung legendaris?
+                                    Fast City Tour menyediakan paket wisata kuliner yang akan mengajak Anda berkeliling
+                                    mencicipi berbagai varian Soto Lamongan terbaik!</p>
+                                <hr>
+                                <a href="https://wa.me/62856200884?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20paket%20wisata%20kuliner%20Soto%20Lamongan"
+                                    target="_blank" class="btn btn-primary-custom mt-2">
+                                    <i class="bi bi-whatsapp me-2"></i>Pesan Paket Kuliner
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a href="article.html" class="btn btn-outline-primary rounded-pill px-4">
+                            <i class="bi bi-arrow-left me-2"></i>Kembali ke Artikel
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4 justify-content-between">
+                <div class="col-lg-4">
+                    <h4 class="fw-bold mb-3 text-orange-custom">Fast City Tour</h4>
+                    <p class="small text-white-50">
+                        Penyedia layanan wisata dan sewa transportasi terpercaya di Lamongan.
+                    </p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="fw-bold mb-3 text-white">Hubungi Kami</h5>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill text-orange-custom me-2"></i> Jl. Lamongan Raya
+                            No. 123</li>
+                        <li class="mb-2"><i class="bi bi-whatsapp text-orange-custom me-2"></i> +62 856-200-884</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-orange-custom me-2"></i> info@fastcitytour.com
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3">
+                    <h5 class="fw-bold mb-3 text-white">Pembayaran</h5>
+                    <div class="bg-white rounded p-2 text-center">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATTM4Wnp2uLirZ6BQXS-8GhMvL8ojwGLca-6vNBVwaQ46hKpPIgZaOwPsbrDDf3mm0mPAzEkOh5pZxQqkY0HCzEoSxISU0W6hepow-NohPGSlTvJZGtQdtFjAklTMTCrw6M94GofFnpui1CkzN2WnlB_BDb2TYvs4Y_6Roj9GxIf--FfoSXS4FrO56kAfWTra89GA4zvG50eG8Aq9QO2WbUhajktmHNI3ME-BDU-oo44v3tIp8uwlnTDY9qmj0beNEEx5zLjdaqs8"
+                            alt="BCA" style="height: 30px;">
+                        <p class="text-dark fw-bold mb-0 small mt-1">8100-50-7711</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary mt-4 pt-3 text-center">
+                <p class="mb-0 small text-white-50">Copyright 2026 © Fast City Tour Lamongan.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-container">
+        <a href="https://wa.me/62856200884?text=Halo%20Fast%20City%20Tour%2C%20saya%20ingin%20bertanya"
+            class="float-btn btn-wa-float" target="_blank" title="Chat WhatsApp">
+            <i class="bi bi-whatsapp fs-3"></i>
+        </a>
+        <a href="#" class="float-btn btn-up-float"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" title="Kembali ke Atas">
+            <i class="bi bi-arrow-up fs-4"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -5,20 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hubungi Kami - Fast City Tour</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <style>
         body {
             font-family: 'Poppins', sans-serif;
             background-color: #f8fafc;
         }
-        
+
         /* WARNA BARU */
         :root {
-            --color-primary: #0a2647; 
+            --color-primary: #0a2647;
             --color-accent: #ff6d00;
             --color-accent-hover: #e65100;
         }
@@ -28,16 +29,25 @@
             font-size: 1.25rem;
             color: var(--color-primary);
         }
-        
-        .text-primary-custom { color: var(--color-primary); }
-        .text-orange-custom { color: var(--color-accent); }
-        .bg-primary-custom { background-color: var(--color-primary); }
-        
+
+        .text-primary-custom {
+            color: var(--color-primary);
+        }
+
+        .text-orange-custom {
+            color: var(--color-accent);
+        }
+
+        .bg-primary-custom {
+            background-color: var(--color-primary);
+        }
+
         .btn-primary-custom {
             background-color: var(--color-accent);
             border-color: var(--color-accent);
             color: white;
         }
+
         .btn-primary-custom:hover {
             background-color: var(--color-accent-hover);
             border-color: var(--color-accent-hover);
@@ -49,27 +59,28 @@
             overflow: hidden;
             padding: 80px 0;
         }
-        
+
         .contact-card {
             transition: all 0.3s ease;
             border: none;
         }
-        
+
         .contact-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .icon-box {
             width: 50px;
             height: 50px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(10, 38, 71, 0.1); /* transparansi biru tua */
+            background: rgba(10, 38, 71, 0.1);
+            /* transparansi biru tua */
             border-radius: 50%;
         }
-        
+
         /* Footer Unified */
         .footer {
             background-color: var(--color-primary);
@@ -77,8 +88,15 @@
             padding-top: 40px;
             padding-bottom: 20px;
         }
-        .footer a { color: #ccc; text-decoration: none; }
-        .footer a:hover { color: var(--color-accent); }
+
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: var(--color-accent);
+        }
 
         /* Floating Buttons */
         .floating-container {
@@ -90,6 +108,7 @@
             flex-direction: column;
             gap: 15px;
         }
+
         .float-btn {
             width: 55px;
             height: 55px;
@@ -98,13 +117,39 @@
             align-items: center;
             justify-content: center;
             color: white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             transition: all 0.3s ease;
             text-decoration: none;
         }
-        .float-btn:hover { transform: scale(1.1); color: white; }
-        .btn-wa-float { background-color: #25D366; }
-        .btn-up-float { background-color: var(--color-accent); }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+            color: white;
+        }
+
+        .btn-wa-float {
+            background-color: #25D366;
+        }
+
+        .btn-up-float {
+            background-color: var(--color-accent);
+        }
+
+        /* Map Container */
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
     </style>
 </head>
 
@@ -117,11 +162,11 @@
                 </div>
                 <span>Fast<span class="text-orange-custom">CityTour</span></span>
             </a>
-            
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto align-items-center">
                     <li class="nav-item">
@@ -140,8 +185,10 @@
                         <a class="nav-link" href="article.html">Artikel</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <a class="btn btn-primary-custom btn-sm rounded-pill px-4" href="https://wa.me/62856200884" target="_blank" title="Chat WhatsApp">
-                            <i class="bi bi-whatsapp me-2"></i>Whatsapp
+                        <a class="btn btn-primary-custom btn-sm rounded-pill px-4"
+                            href="https://wa.me/62856200884?text=Halo%20Fast%20City%20Tour%2C%20saya%20ingin%20bertanya%20tentang%20paket%20wisata"
+                            target="_blank" title="Chat WhatsApp">
+                            <i class="bi bi-whatsapp me-2"></i>Hubungi Kami
                         </a>
                     </li>
                 </ul>
@@ -154,7 +201,8 @@
             <div class="text-center">
                 <h1 class="display-4 fw-bold text-primary-custom mb-3">Hubungi Kami</h1>
                 <p class="lead text-muted mx-auto" style="max-width: 700px;">
-                    Punya pertanyaan tentang paket wisata atau sewa mobil kami? Kami siap membantu Anda merencanakan perjalanan sempurna di Lamongan.
+                    Punya pertanyaan tentang paket wisata atau sewa mobil kami? Kami siap membantu Anda merencanakan
+                    perjalanan sempurna di Lamongan.
                 </p>
             </div>
         </div>
@@ -169,7 +217,7 @@
                             <h5 class="fw-bold text-primary-custom mb-4 d-flex align-items-center">
                                 <i class="bi bi-headset me-2"></i> Informasi Kontak
                             </h5>
-                            
+
                             <ul class="list-unstyled">
                                 <li class="mb-4">
                                     <div class="d-flex align-items-start">
@@ -182,7 +230,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                
+
                                 <li class="mb-4">
                                     <div class="d-flex align-items-start">
                                         <div class="icon-box text-primary-custom me-3 flex-shrink-0">
@@ -194,7 +242,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                
+
                                 <li class="mb-4">
                                     <div class="d-flex align-items-start">
                                         <div class="icon-box text-primary-custom me-3 flex-shrink-0">
@@ -202,7 +250,8 @@
                                         </div>
                                         <div>
                                             <p class="text-muted small mb-1 fw-medium">Alamat Kantor</p>
-                                            <p class="fw-semibold mb-0 small">Jl. Lamongan Raya No. 123, Lamongan, Jawa Timur</p>
+                                            <p class="fw-semibold mb-0 small">Jl. Lamongan Raya No. 123, Lamongan, Jawa
+                                                Timur</p>
                                         </div>
                                     </div>
                                 </li>
@@ -210,30 +259,35 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-8">
                     <div class="card contact-card shadow-sm">
                         <div class="card-body p-4 p-lg-5">
                             <h5 class="fw-bold mb-4">Kirim Pesan</h5>
-                            
+
                             <form>
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <label for="name" class="form-label fw-medium">Nama Lengkap</label>
-                                        <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda">
+                                        <input type="text" class="form-control" id="name"
+                                            placeholder="Masukkan nama Anda">
                                     </div>
                                     <div class="col-md-6">
                                         <label for="email" class="form-label fw-medium">Email</label>
-                                        <input type="email" class="form-control" id="email" placeholder="email@example.com">
+                                        <input type="email" class="form-control" id="email"
+                                            placeholder="email@example.com">
                                     </div>
                                     <div class="col-12">
                                         <label for="message" class="form-label fw-medium">Pesan</label>
-                                        <textarea class="form-control" id="message" rows="5" placeholder="Ceritakan rencana perjalanan Anda..."></textarea>
+                                        <textarea class="form-control" id="message" rows="5"
+                                            placeholder="Ceritakan rencana perjalanan Anda..."></textarea>
                                     </div>
                                     <div class="col-12">
-                                        <a href="https://wa.me/62856200884" target="_blank" title="Chat WhatsApp">
-                                            <button class="btn btn-primary-custom btn-lg rounded-pill px-5 w-100 w-md-auto">
-                                                Kirim Pesan
+                                        <a href="https://wa.me/62856200884?text=Halo%20Fast%20City%20Tour%2C%20saya%20ingin%20bertanya"
+                                            target="_blank" title="Kirim Pesan via WhatsApp">
+                                            <button type="button"
+                                                class="btn btn-primary-custom btn-lg rounded-pill px-5 w-100 w-md-auto">
+                                                <i class="bi bi-whatsapp me-2"></i>Kirim Pesan
                                             </button>
                                         </a>
                                     </div>
@@ -242,6 +296,19 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Maps Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold text-primary-custom mb-3">Lokasi Kami</h2>
+                <p class="text-muted">Kunjungi kantor kami untuk konsultasi langsung</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15837.177328883628!2d112.23863069395048!3d-7.091840786579177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77f32816733973%3A0x3ff963bee2602d19!2sMoropelang%2C%20Kec.%20Babat%2C%20Kabupaten%20Lamongan%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1770397355822!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
@@ -259,21 +326,24 @@
                 <div class="col-lg-4">
                     <h5 class="fw-bold mb-3 text-white">Hubungi Kami</h5>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><i class="bi bi-geo-alt-fill text-orange-custom me-2"></i> Jl. Lamongan Raya No. 123</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill text-orange-custom me-2"></i> Jl. Lamongan Raya
+                            No. 123</li>
                         <li class="mb-2"><i class="bi bi-whatsapp text-orange-custom me-2"></i> +62 856-200-884</li>
-                        <li class="mb-2"><i class="bi bi-envelope text-orange-custom me-2"></i> info@fastcitytour.com</li>
+                        <li class="mb-2"><i class="bi bi-envelope text-orange-custom me-2"></i> info@fastcitytour.com
+                        </li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3">
                     <h5 class="fw-bold mb-3 text-white">Pembayaran</h5>
                     <div class="bg-white rounded p-2 text-center">
-                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATTM4Wnp2uLirZ6BQXS-8GhMvL8ojwGLca-6vNBVwaQ46hKpPIgZaOwPsbrDDf3mm0mPAzEkOh5pZxQqkY0HCzEoSxISU0W6hepow-NohPGSlTvJZGtQdtFjAklTMTCrw6M94GofFnpui1CkzN2WnlB_BDb2TYvs4Y_6Roj9GxIf--FfoSXS4FrO56kAfWTra89GA4zvG50eG8Aq9QO2WbUhajktmHNI3ME-BDU-oo44v3tIp8uwlnTDY9qmj0beNEEx5zLjdaqs8" alt="BCA" style="height: 30px;">
+                        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuATTM4Wnp2uLirZ6BQXS-8GhMvL8ojwGLca-6vNBVwaQ46hKpPIgZaOwPsbrDDf3mm0mPAzEkOh5pZxQqkY0HCzEoSxISU0W6hepow-NohPGSlTvJZGtQdtFjAklTMTCrw6M94GofFnpui1CkzN2WnlB_BDb2TYvs4Y_6Roj9GxIf--FfoSXS4FrO56kAfWTra89GA4zvG50eG8Aq9QO2WbUhajktmHNI3ME-BDU-oo44v3tIp8uwlnTDY9qmj0beNEEx5zLjdaqs8"
+                            alt="BCA" style="height: 30px;">
                         <p class="text-dark fw-bold mb-0 small mt-1">8100-50-7711</p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="border-top border-secondary mt-4 pt-3 text-center">
                 <p class="mb-0 small text-white-50">Copyright 2026 © Fast City Tour Lamongan.</p>
             </div>
@@ -281,14 +351,17 @@
     </footer>
 
     <div class="floating-container">
-        <a href="https://wa.me/62856200884" class="float-btn btn-wa-float" target="_blank">
+        <a href="https://wa.me/62856200884?text=Halo%20Fast%20City%20Tour%2C%20saya%20ingin%20bertanya"
+            class="float-btn btn-wa-float" target="_blank" title="Chat WhatsApp">
             <i class="bi bi-whatsapp fs-3"></i>
         </a>
-        <a href="#" class="float-btn btn-up-float" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+        <a href="#" class="float-btn btn-up-float"
+            onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;" title="Kembali ke Atas">
             <i class="bi bi-arrow-up fs-4"></i>
         </a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
